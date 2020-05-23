@@ -1,6 +1,6 @@
 public interface Examinator {
 
-    public void computeAvrage() throws BadGradesExeption;
+    public void computeAvragePoli() throws BadGradesExeption,GradesOutOfReachExeption;
 
 
 }
