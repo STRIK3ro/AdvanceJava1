@@ -1,0 +1,2 @@
+audi,A3,negru,15000,benzina,2006
+bmw,S9,negru,20000,benzina,2010
