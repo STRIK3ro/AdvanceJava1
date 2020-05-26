@@ -6,3 +6,4 @@ renault,Clio,negru,15000,benzina,2010
 ford,I5,rosu,15000,motorina,2012
 tesla,I9,negru,50000,electica,2013
 bmw,S9,negru,20000,benzina,2010
+audi,S9,albastru,15000,benzina,2010

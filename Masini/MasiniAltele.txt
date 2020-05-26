@@ -1,0 +1,2 @@
+skoda,Octavia,negru,10000,benzina,2011
+tesla,I9,negru,50000,electica,2013

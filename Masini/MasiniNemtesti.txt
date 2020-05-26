@@ -1,0 +1,2 @@
+bmw,S3,rosu,35000,benzina,2005
+audi,S9,albastru,15000,benzina,2010

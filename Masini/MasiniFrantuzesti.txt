@@ -1,0 +1,3 @@
+renault,Megan,alb,20000,motorina,2009
+renault,Clio,negru,15000,benzina,2010
+ford,I5,rosu,15000,motorina,2012

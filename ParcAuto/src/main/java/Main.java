@@ -60,15 +60,26 @@ public class Main {
             BufferedWriter masiniVanduteBuffer=new BufferedWriter(masiniVanduteWriter);
 
             String text=masiniInitialeBuffer.readLine();
+
+            String[] split=text.split(",");
+            Masina masina=new Masina(split[0],split[1],split[2],Integer.valueOf(split[3]),split[4],Integer.valueOf(split[5]));
             while (text!=null){
-                String[] split=text.split(",");
-                Masina masina=new Masina(split[0],split[1],split[2],Integer.valueOf(split[3]),split[4],Integer.valueOf(split[5]));
+
                 System.out.println("Rata la masina " +masina.getMarca()+ " este : "+masina.payRate() );
 
                 if(masina.getSold()==true){
                     masiniVanduteBuffer.write(text);
                     masiniVanduteBuffer.newLine();
 
+                }else if(masina.getMarca().equals("bmw")||masina.getMarca().equals("audi")){
+                    masiniNemstestiBufferd.write(text);
+                    masiniNemstestiBufferd.newLine();
+                }else  if(masina.getMarca().equals("renault")||masina.getMarca().equals("ford")){
+                    masiniFrantuzestiBufferd.write(text);
+                    masiniFrantuzestiBufferd.newLine();
+                }else if(!masina.getMarca().equals("bmw")||!masina.getMarca().equals("audi")||!masina.getMarca().equals("renault")||!masina.getMarca().equals("ford")){
+                    masiniAlteleBuffer.write(text);
+                    masiniAlteleBuffer.newLine();
                 }
 
 
@@ -76,6 +87,23 @@ public class Main {
             }
             masiniVanduteBuffer.flush();
             masiniVanduteBuffer.close();
+
+            masiniNemstestiBufferd.flush();
+            masiniNemstestiBufferd.close();
+
+            masiniFrantuzestiBufferd.flush();
+            masiniFrantuzestiBufferd.close();
+
+            masiniAlteleBuffer.flush();
+            masiniAlteleBuffer.close();
+
+            //De aici comparam masini
+
+
+
+
+
+
 
 
         } catch (IOException e) {
